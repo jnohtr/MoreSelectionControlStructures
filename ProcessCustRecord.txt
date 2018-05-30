@@ -1,0 +1,39 @@
+## Process customer record
+A program is required to read a customer’s name, a purchase amount and a tax code.
+The tax code has been validated and will be one of the following:
+    0  tax exempt (0%)
+    1  state sales tax only (3%)
+    2  federal and state sales tax (5%)
+    3  special sales tax (7%)
+The program must then compute the sales tax and the total amount due,and print the customer’s name, purchase amount, sales tax and total amount due.
+
+INOUT
+customer_name
+purchase_amout
+tax_code
+
+OUTPUTS
+customer_namepurchase_amount
+sals_tax
+total_amount_due
+
+PROCESSING STEPS
+read customer_name, purchase_amout, tax_code
+
+
+taxcode_percent =0
+if tax_code = 0 then
+	taxcode_percent =0
+else if tascode = 1 then
+	taxcode_percent = 3
+else if tascode = 2 then
+	tascode_percent = 5
+else if taxcode = 3
+	then tascode_percent = 7
+	
+tax_due = purchase_amout * (tascode_percent/100)
+totalamopunt = purchase_amout + tax_due
+
+display customer_name, purchase_amout, tax_due, total_amount_due
+
+	
